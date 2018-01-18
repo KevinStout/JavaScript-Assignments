@@ -9,12 +9,26 @@ body {
     background-repeat:no-repeat;
 }
 
-footer, header{
-    background-color:black;
-    color: white;    
+header{
+    background-color: #43504f;
+    color: #abbac1;    
    /* opacity is optional - if you have a background photo, it will allow the photo to show through the color */
-    opacity: 1;
+    opacity: 0.8;
     width: 100%;
+    margin: 0.1%, 0.15%, 0.1%, 0.15%;
+}
+
+footer {
+    /* I may put this back in at some point */
+    /* position: fixed; 
+    left: 0;
+    bottom: 0; */
+    width: 100%;
+    background-color: #43504f;
+    color: #abbac1;
+    text-align: center;
+    opacity: 0.8;
+    margin: 0.1%, 0.15%, 0.1%, 0.15%;
 }
 
 article{
@@ -28,40 +42,44 @@ article{
 
 section{
     flex:1;
-    background-color: rgba(255, 255, 255, 0.274);
+    background-color: #6894ad;
     /*  use % for padding, height and width */
-    padding: 2%;    
-    min-width: 30%;
-    max-width: 100%;
-    min-height: 30%;
+    padding: 1%;    
+    min-width: 10%;
+    max-width: 99.5%;
+    min-height: 10%;
+    margin: 0.15%;
    /* opacity is optional - if you have a background photo, it will allow the photo to show through the color */
-    opacity: 1;
+    opacity: 0.7;
 }
 
 h1{
     /* font-family: set in the body /*
    /*  use em for size or another relative measurement */
     font-size: 1.5em;
-    color: white;
+    color: #f4f8fa;
     text-shadow: 0.2em;
     text-align: left;
+    padding: 0.5%;
+    opacity: 1;
 }
 
 h2{
     /* font-family: set in the body */
-    color: rgb(92, 37, 46);
+    color: #f4f8fa;
    /*  use em for size or another relative measurement */
     font-size: 1.3em;
     text-shadow: 0.2em;
     /*  use % for width */
-    width:100%;
-    background-color: rgba(156, 102, 111, 0.486);
+    width:99%;
+    background-color: #29578E;
     /* can use pixels for padding */
     padding: 0.5%;
    /* opacity is optional - if you have a background photo, it will allow the photo to show through the color */
     opacity: 1;
     /*  border-radius should be pixels */
     border-radius: 1px;
+    opacity: 1;
 }
 nav {
     margin:0px;
@@ -69,7 +87,7 @@ nav {
     height:auto;
 }
 nav ul {
-    background: green;
+    background: #4c6f99;
     /* box-shadow settings can be whatever you want */
     box-shadow: 6px 6px 6px black;
     padding: 10px;
@@ -95,12 +113,12 @@ nav ul li a {
     display: block;
     /* the padding can be in pixels */ 
     padding: 1px;
-    color: purple;
+    color: #f4f8fa;
     text-shadow: none;
     text-decoration: none;
 }
 nav ul li:hover a {
-    color: yellowgreen;
+    color: #a18d59;
     text-decoration: none;
 }
 nav ul li:hover > ul {
