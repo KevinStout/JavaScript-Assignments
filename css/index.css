@@ -1,18 +1,22 @@
 body {
-    font-family:
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     /*  use em for size or another relative measurement */
-    font-size:
-    background-image:
+    font-size: 1em;
+    background-color: aqua;
+    background-image: url("../media/background.jpg");
     /* size should be should be cover or contain */
-    background-size: 
+    background-size: cover;
     background-repeat:no-repeat;
 }
+
 footer, header{
-    background-color:
+    background-color:black;
+    color: white;    
    /* opacity is optional - if you have a background photo, it will allow the photo to show through the color */
-    opacity:
-    width:
+    opacity: 1;
+    width: 100%;
 }
+
 article{
    /* use the settings shown below */
     display: flex;
@@ -21,40 +25,43 @@ article{
     flex-wrap:wrap;
     justify-content:space-between;
 }
+
 section{
     flex:1;
-    background-color:
+    background-color: rgba(255, 255, 255, 0.274);
     /*  use % for padding, height and width */
-    padding:
-    min-width:
-    max-width:
-    min-height:
+    padding: 2%;    
+    min-width: 30%;
+    max-width: 100%;
+    min-height: 30%;
    /* opacity is optional - if you have a background photo, it will allow the photo to show through the color */
-    opacity:
+    opacity: 1;
 }
+
 h1{
-    font-family: 
+    /* font-family: set in the body /*
    /*  use em for size or another relative measurement */
-    font-size:
-    color:
-    text-shadow:
-    text-align:
+    font-size: 1.5em;
+    color: white;
+    text-shadow: 0.2em;
+    text-align: left;
 }
+
 h2{
-    font-family:
-    color:
+    /* font-family: set in the body */
+    color: rgb(92, 37, 46);
    /*  use em for size or another relative measurement */
-    font-size:
-    text-shadow:
+    font-size: 1.3em;
+    text-shadow: 0.2em;
     /*  use % for width */
-    width:
-    background-color:
+    width:100%;
+    background-color: rgba(156, 102, 111, 0.486);
     /* can use pixels for padding */
-    padding:
+    padding: 0.5%;
    /* opacity is optional - if you have a background photo, it will allow the photo to show through the color */
-    opacity:
+    opacity: 1;
     /*  border-radius should be pixels */
-    border-radius:
+    border-radius: 1px;
 }
 nav {
     margin:0px;
@@ -62,38 +69,38 @@ nav {
     height:auto;
 }
 nav ul {
-    background: 
+    background: green;
     /* box-shadow settings can be whatever you want */
     box-shadow: 6px 6px 6px black;
     padding: 10px;
     border-radius: 10px; 
     list-style: none;
     position: relative;
-    color:
+    color: black;
     /* font-weight can be whatever you want */
-    font-weight:900;
+    font-weight: 100;
 }
 nav ul li {
     display:inline-table;
     margin:10px;
     padding:5px;
-    color:
+    color: rgb(250, 6, 217);
 }
 nav ul li:hover {
-    color:
+    color: blue;
     /*  font-size should be a relative measurement */
-    font-size:
+    font-size: inherit;
 }
 nav ul li a {
     display: block;
     /* the padding can be in pixels */ 
-    padding:
-    color:
-    text-shadow:
+    padding: 1px;
+    color: purple;
+    text-shadow: none;
     text-decoration: none;
 }
 nav ul li:hover a {
-    color: 
+    color: yellowgreen;
     text-decoration: none;
 }
 nav ul li:hover > ul {
@@ -103,14 +110,14 @@ nav ul li:hover > ul {
 
 nav ul ul {
     display: none;
-    background:
+    background: brown;
     /* the border color can be whatever you want */
     border:2px solid black;
     border-radius: 0px; 
     padding: 0px;
     position: absolute; 
    /*  font-size should be a relative measurement */
-    font-size:
+    font-size: 1em;
     z-index:10; 
 }
 
@@ -120,14 +127,14 @@ nav ul ul li {
     border-top: 1px solid black;
     border-bottom: 1px solid black; 
     position: relative;
-    text-align:
-    background: 
+    text-align: center;
+    background: #025d9b;
 }
 nav ul ul li a {
     padding: 15px;
-    color:
+    color: hotpink;
 }     
 nav ul ul li a:hover {
-    background: 
-    color:
-}
+    background: blueviolet;
+    color: yellow;
+} 
