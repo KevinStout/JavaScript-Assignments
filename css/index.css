@@ -1,0 +1,133 @@
+body {
+    font-family:
+    /*  use em for size or another relative measurement */
+    font-size:
+    background-image:
+    /* size should be should be cover or contain */
+    background-size: 
+    background-repeat:no-repeat;
+}
+footer, header{
+    background-color:
+   /* opacity is optional - if you have a background photo, it will allow the photo to show through the color */
+    opacity:
+    width:
+}
+article{
+   /* use the settings shown below */
+    display: flex;
+    flex-direction:column;
+    height:500px;
+    flex-wrap:wrap;
+    justify-content:space-between;
+}
+section{
+    flex:1;
+    background-color:
+    /*  use % for padding, height and width */
+    padding:
+    min-width:
+    max-width:
+    min-height:
+   /* opacity is optional - if you have a background photo, it will allow the photo to show through the color */
+    opacity:
+}
+h1{
+    font-family: 
+   /*  use em for size or another relative measurement */
+    font-size:
+    color:
+    text-shadow:
+    text-align:
+}
+h2{
+    font-family:
+    color:
+   /*  use em for size or another relative measurement */
+    font-size:
+    text-shadow:
+    /*  use % for width */
+    width:
+    background-color:
+    /* can use pixels for padding */
+    padding:
+   /* opacity is optional - if you have a background photo, it will allow the photo to show through the color */
+    opacity:
+    /*  border-radius should be pixels */
+    border-radius:
+}
+nav {
+    margin:0px;
+    width:100%;
+    height:auto;
+}
+nav ul {
+    background: 
+    /* box-shadow settings can be whatever you want */
+    box-shadow: 6px 6px 6px black;
+    padding: 10px;
+    border-radius: 10px; 
+    list-style: none;
+    position: relative;
+    color:
+    /* font-weight can be whatever you want */
+    font-weight:900;
+}
+nav ul li {
+    display:inline-table;
+    margin:10px;
+    padding:5px;
+    color:
+}
+nav ul li:hover {
+    color:
+    /*  font-size should be a relative measurement */
+    font-size:
+}
+nav ul li a {
+    display: block;
+    /* the padding can be in pixels */ 
+    padding:
+    color:
+    text-shadow:
+    text-decoration: none;
+}
+nav ul li:hover a {
+    color: 
+    text-decoration: none;
+}
+nav ul li:hover > ul {
+    display:flex;
+    flex-direction:column;
+}
+
+nav ul ul {
+    display: none;
+    background:
+    /* the border color can be whatever you want */
+    border:2px solid black;
+    border-radius: 0px; 
+    padding: 0px;
+    position: absolute; 
+   /*  font-size should be a relative measurement */
+    font-size:
+    z-index:10; 
+}
+
+nav ul ul li {
+    display:block;
+    /*  you can adjust the border top and bottom colors to whatever you want */
+    border-top: 1px solid black;
+    border-bottom: 1px solid black; 
+    position: relative;
+    text-align:
+    background: 
+}
+nav ul ul li a {
+    padding: 15px;
+    color:
+}     
+nav ul ul li a:hover {
+    background: 
+    color:
+}
