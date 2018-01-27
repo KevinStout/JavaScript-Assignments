@@ -3,6 +3,10 @@ body{
     font-size: 1em;
     background-color: white;
 }
+header{
+    padding-left: 1%;
+    padding-top: 1%;
+}
 
 header h1{
     float: right;
