@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>My Favorite Foods</title>
+<style>
+body{
+	background-image:url('media/Food.jpg');
+	background-repeat:no-repeat;
+	background-position:left;
+	background-size:contain;
+	min-width:300px;
+	min-height:400px;
+	max-width:500px;
+}
+h1{
+	color:tan;
+	font-size:2em;
+	text-shadow:2px 2px black;
+	font-family:Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;	
+}
+ol{
+	outline:5px tan inset;
+	background-color:linen;
+	opacity:.8;
+	padding:1%;
+	min-width:200px;
+	max-width:400px;
+}
+li{
+	font-family:"Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+	line-height:110%;
+	list-style-position:inside;
+}
+</style>
+</head>
+<body>
+<script>
+	var favoriteFoods = [];
+	var favoriteFoodArraySize = prompt("How many favorite foods do you have?");
+
+	while (isNaN(favoriteFoodArraySize)) {
+		favoriteFoodArraySize = prompt("Please enter a number. How many favorite foods do you have?")
+	}
+
+    var counter1 = 0;
+    var displayCounter;
+
+    while (counter1 < favoriteFoodArraySize) {       
+        displayCounter = counter1 +1;
+
+        favoriteFoods.push(prompt("Please enter favorite food number " + displayCounter));
+        counter1++;
+    }
+
+	document.writeln("<h1>Here are your favorite foods...</h1>");
+	document.write("<ul>");
+    
+    var counter2 = 0;
+    while (counter2 < favoriteFoods.length) {
+        console.log("in the second while");
+        document.write("<li>" + favoriteFoods[counter2] + "</li>");
+        counter2++;	
+    }
+
+	document.write("</ul>");
+
+</script>
+</body>
+</html>

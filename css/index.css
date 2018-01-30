@@ -29,6 +29,7 @@ footer {
     text-align: center;
     opacity: 0.8;
     margin: 0.1%, 0.15%, 0.1%, 0.15%;
+    z-index: -1;
 }
 
 article{
