@@ -84,12 +84,13 @@ p{
 			 var highEndHR = (220 - age - restingHR) * 0.85;
 			 var adjustedHighEndHR = highEndHR +restingHR;
 
-			 targetHRMessage = "Your training heart rate is between: <br>" + adjustedLowEndHR + " and " + adjustedHighEndHR;
+			 targetHRMessage = "Your training heart rate is between: " + adjustedLowEndHR + " and " + adjustedHighEndHR;
 
-			 thankyou();
+			 document.getElementById("feedback").innerHTML = targetHRMessage;
+			 thankyou();			 
 		 }
 
-		 document.getElementById("feedback").innerHTML = targetHRMessage;
+		 
      } 
 
      function thankyou(){
@@ -116,10 +117,12 @@ p{
 				thankYouMessage = "Thank you for using our service"
 				break;
 		}
+		document.getElementById("thanks").innerHTML = thankYouMessage;
      }	
 
      function clearText(){
-
+		document.getElementById("thanks").innerHTML = "";
+		document.getElementById("feedback").innerHTML = "";
      } 						
 </script>
 </head>
