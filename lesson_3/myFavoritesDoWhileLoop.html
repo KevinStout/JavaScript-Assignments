@@ -45,21 +45,20 @@ li{
     var counter1 = 0;
     var displayCounter;
 
-    while (counter1 < favoriteFoodArraySize) {       
+    do {
         displayCounter = counter1 +1;
-
         favoriteFoods.push(prompt("Please enter favorite food number " + displayCounter));
         counter1++;
-    }
+    } while (counter1 < favoriteFoodArraySize);
 
 	document.writeln("<h1>Here are your favorite foods...</h1>");
 	document.write("<ul>");
     
     var counter2 = 0;
-    while (counter2 < favoriteFoods.length) {        
+    do {
         document.write("<li>" + favoriteFoods[counter2] + "</li>");
         counter2++;	
-    }
+    } while (counter2 < favoriteFoods.length);
 
 	document.write("</ul>");
 
