@@ -64,67 +64,6 @@ p{
 	color:white;
 }
 </style>
-<script>
-     function calcRate() { 
-		 var age = parseInt(document.getElementById("age").value);
-		 var restingHR = parseInt(document.getElementById("restingHR").value);
-		 var targetHRMessage;
-
-		 if(isNaN(age) || age > 99 || age < 15){
-			 alert("Please enter your age (15-99)");
-			 document.getElementById("age").value = "";
-			 document.getElementById("age").focus();
-		 } else if(isNaN(restingHR) || restingHR < 20 || restingHR > 100){
-			alert("Please enter your resting heart rate (20-100) or 50 if you do not know it");
-			document.getElementById("restingHR").value = "";
-			document.getElementById("restingHR").focus();
-		 } else{
-			 var lowEndHR = (220 - age - restingHR) * 0.5;
-			 var adjustedLowEndHR = lowEndHR + restingHR;
-			 var highEndHR = (220 - age - restingHR) * 0.85;
-			 var adjustedHighEndHR = highEndHR +restingHR;
-
-			 targetHRMessage = "Your training heart rate is between: " + adjustedLowEndHR + " and " + adjustedHighEndHR;
-
-			 document.getElementById("feedback").innerHTML = targetHRMessage;
-			 thankyou();			 
-		 }
-
-		 
-     } 
-
-     function thankyou(){
-		var randNum = Math.floor((Math.random() * 7) + 1);
-		var thankYouMessage;
-
-		switch (randNum) {
-			case 1:
-				thankYouMessage = "Have a great day";
-				break;
-			case 2:
-				thankYouMessage = "Have an awesome day!";				
-				break;
-			case 3:
-				thankYouMessage = "Thank you for using the Heart Rate Calculator";
-				break;
-			case 4:
-				thankYouMessage = "Have a splendid day";
-				break;
-			case 5:
-				thankYouMessage = "Have an amazing day!"
-				break;
-			default:
-				thankYouMessage = "Thank you for using our service"
-				break;
-		}
-		document.getElementById("thanks").innerHTML = thankYouMessage;
-     }	
-
-     function clearText(){
-		document.getElementById("thanks").innerHTML = "";
-		document.getElementById("feedback").innerHTML = "";
-     } 						
-</script>
 </head>
 <body>
 	<article class="center">
@@ -145,4 +84,65 @@ p{
 	</article>
 	<script>document.getElementById("age").focus();</script>
 </body>
+<script>
+	function calcRate() { 
+		var age = parseInt(document.getElementById("age").value);
+		var restingHR = parseInt(document.getElementById("restingHR").value);
+		var targetHRMessage;
+
+		if(isNaN(age) || age > 99 || age < 15){
+			alert("Please enter your age (15-99)");
+			document.getElementById("age").value = "";
+			document.getElementById("age").focus();
+		} else if(isNaN(restingHR) || restingHR < 20 || restingHR > 100){
+		   alert("Please enter your resting heart rate (20-100) or 50 if you do not know it");
+		   document.getElementById("restingHR").value = "";
+		   document.getElementById("restingHR").focus();
+		} else{
+			var lowEndHR = (220 - age - restingHR) * 0.5;
+			var adjustedLowEndHR = lowEndHR + restingHR;
+			var highEndHR = (220 - age - restingHR) * 0.85;
+			var adjustedHighEndHR = highEndHR +restingHR;
+
+			targetHRMessage = "Your training heart rate is between: " + adjustedLowEndHR + " and " + adjustedHighEndHR;
+
+			document.getElementById("feedback").innerHTML = targetHRMessage;
+			thankyou();			 
+		}
+
+		
+	} 
+
+	function thankyou(){
+	   var randNum = Math.floor((Math.random() * 7) + 1);
+	   var thankYouMessage;
+
+	   switch (randNum) {
+		   case 1:
+			   thankYouMessage = "Have a great day";
+			   break;
+		   case 2:
+			   thankYouMessage = "Have an awesome day!";				
+			   break;
+		   case 3:
+			   thankYouMessage = "Thank you for using the Heart Rate Calculator";
+			   break;
+		   case 4:
+			   thankYouMessage = "Have a splendid day";
+			   break;
+		   case 5:
+			   thankYouMessage = "Have an amazing day!"
+			   break;
+		   default:
+			   thankYouMessage = "Thank you for using our service"
+			   break;
+	   }
+	   document.getElementById("thanks").innerHTML = thankYouMessage;
+	}	
+
+	function clearText(){
+	   document.getElementById("thanks").innerHTML = "";
+	   document.getElementById("feedback").innerHTML = "";
+	} 						
+</script>
 </html>

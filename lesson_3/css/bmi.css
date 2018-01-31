@@ -1,0 +1,52 @@
+body{
+	font-family: sans-serif;
+	background-image:url('../media/fitness.jpg');
+    background-repeat:no-repeat;
+    background-size:cover;
+    color:rgb(80, 80, 80);
+    font-size:14pt;
+}
+section{
+	margin-left:100px;
+	background-color:white;
+	width:500px; 
+	padding:10px;
+	box-shadow:10px 10px 10px darkorange;
+}
+h1{
+	font-size:28pt;
+	text-align:center;
+}
+h3{
+    text-align: center;
+}
+input:focus { 
+    background-color:darkorange;
+    color:white;
+}
+p{
+	text-align:center;
+	font-size:14pt;
+	font-weight:900;
+}
+.inputButton{
+	font-size:14pt;
+	width: 100px; 
+	height: 30px;
+	font-size:12pt;
+	background-color: darkorange;
+    color:rgb(80, 80, 80);
+    font-weight: bold;
+}
+.formEntry{
+	text-align:center;
+	width:100px;
+	height:20px;
+	font-size:14pt;
+	color:rgb(80, 80, 80);
+}
+.labelDisplay{
+	width:300px;
+	text-align:right;
+	float:left;
+}
