@@ -1,0 +1,92 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<title>Image Collection DOM Example</title>
+<link href="../css/index.css" rel="stylesheet" type="text/css" />
+<style>
+body{
+	background-image: none;
+	background-color: rgb(211, 243, 232);
+}
+a{
+	padding-right:10px;
+}
+nav a:hover{
+	background-color:rgb(84, 139, 84);	
+	padding: 5px;
+}
+a:hover{
+	background-color:rgb(211, 243, 232);
+}
+</style>
+</head>
+<body onload="processName();">
+<hr>
+<a href="media/mountain-landscape.jpg">
+<img alt="Mountain landscape" class="auto-style2" src="media/mountain-landscape.jpg" style="width: 250px; height: 188px">
+</a>
+<a href="media/scottish-landscape.jpg">
+<img alt="Scottish coast line" class="auto-style2" src="media/scottish-landscape.jpg" style="width: 250px; height: 188px">
+</a>
+<a href="media/sunset-landscape.jpg">
+<img alt="Sunset of a mountain lake" class="auto-style2" src="media/sunset-landscape.jpg" style="width: 250px; height: 188px">
+</a>
+<a href="media/water-landscape.jpg">
+<img alt="Dock on a mountain lake" class="auto-style2" src="media/water-landscape.jpg" style="width: 250px; height: 188px">
+</a>
+<hr>
+<h3>Photo Name:</h3>
+<p id="name">
+	<script>
+	// Displays the text from the alt attribute as the Image Name
+	function processName()
+	{
+		var contents = "";
+		// concatenate each alternate name
+		for ( var i = 0; i < document.images.length; i++ )
+		{
+		     contents += i+1 + ". " +  document.images[i].alt + "&nbsp;&nbsp; ";
+		} // end for
+		document.getElementById( "name" ).innerHTML = contents;
+		// calls function proccessSource in script below
+		processSource();  
+	}	
+	</script>
+</p>
+<h3>Photo Source</h3>
+<p id="source">
+	<script>
+	//Displays the text from the src attribute as the file name and location
+	function processSource()
+	{
+		var contents = "";
+		// concatenate each alternate name
+		for ( var i = 0; i < document.images.length; i++ )
+		{
+			  contents += i+1 + ". " +  document.images[i].src + "&nbsp;&nbsp; ";
+	} // end for
+	document.getElementById( "source" ).innerHTML = contents;
+	// calls function processLinks in the script below
+	processLinks();
+	}
+	</script>
+</p>
+<h3>Photo Text Links</h3>
+	<nav id="links">
+	<script>
+	// Creates navigation text links to the larger images
+		function processLinks()
+		{
+			var contents = "| ";
+			// concatenate each link to contents
+			for ( var i = 0; i < document.links.length; i++ )
+			{
+			   contents += "<a href=" + document.links[i].href + ">" + document.images[i].alt + "</a>  | ";
+			} // end for
+			document.getElementById( "links" ).innerHTML = contents;
+		} // end function processlinks
+	</script>
+	</nav>
+<hr>
+</body>
+</html>
