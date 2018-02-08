@@ -1,0 +1,79 @@
+﻿<!DOCTYPE html>
+<html >
+<head>
+<title>Using Links Collection</title>
+<link href="../css/CIT190.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<h1>Link Collection Example:</h1>
+<hr/>
+<p>Web-related coursework at 
+<a href="https://www.nmc.edu/programs/academic-programs/computer-studies-cit-developer/catalog.html">NMC</a>includes:</p>
+<ul>
+	<li>
+	<a href="http://lisabalbach.com/CIT178/2018-Spring%20CIT%20178%20Syllabus.pdf">
+	CIT178 - Relational Databases </a>covers SQL Server</li>
+	<li><a href="http://lisabalbach.com/CIT180/">CIT180 - 
+	HTML &amp; CSS Programming</a>&nbsp; provides 
+	instruction on HTML 5, CSS3 and responsive design</li>
+	<li><a href="http://lisabalbach.com/CIT190/">CIT190 - JavaScript Programming
+	</a>&nbsp;covers JavaScript, JQuery and AJAX</li>
+	<li><a href="http://lisabalbach.com/CIT228/">CIT228 - Data Sources</a> 
+	which includes instruction on PHP,&nbsp; MYSQL and MongoDB</li>
+</ul>
+<h2>Fall 2018 Course Descriptions</h2>
+<h3>CIT 178 -- Relational Databases</h3>
+<p>This course introduces students to core database concepts including data, 
+data types, and relationships. Students will interpret and create relational 
+data structures and use SQL language to perform basic create, read, update, and 
+delete operations. Students will perform, administrative, backup and security 
+functions. Students will recognize the value of optimized data and produce 
+normalized designs. Course content is mapped to the MTA 98-364 Database 
+Fundamentals learning objectives and students enrolled in this course will take 
+the certification exam. Group 2 course.</p>
+<h3>CIT 180 -- HTML and CSS Programming</h3>
+<p>Students in this course will develop skills in HTML web development with a 
+focus on responsive web design and CSS styling techniques. An emphasis is placed 
+on developing solid coding practices as well as providing for ADA compliance 
+requirements and W3C HTML and CSS validation. Students will develop web projects 
+during the course. A brief introduction to JavaScript and other web-related 
+extended topics is included. Course content is mapped to the MTA 98-383 
+Introduction to Programming Using HTML and CSS learning objectives and students 
+enrolled in this course will take the certification exam. Group 2 course.</p>
+<h3>CIT 190 -- JavaScript Programming</h3>
+<p>Students in this course develop web client scripting skills using JavaScript 
+and jQuery. Students use variables, decisions, loops, functions, objects, and 
+other programming concepts as they add robust and powerful interactivity to web 
+pages. Students create responsive web solutions integrating HTML, CSS, 
+JavaScript, jQuery, JSON, and Ajax technologies. Course content is mapped to the 
+MTA 98-382 Introduction to Programming Using JavaScript learning objectives and 
+students enrolled in this course will take the certification exam. Group 2 
+course.</p>
+<h3>CIT 228 -- Advanced Database Systems</h3>
+<p>This course builds upon database knowledge gained in CIT178 by extending into 
+other data sources and connection technologies. Students will be able to 
+identify and evaluate data options and access data via code. Group 2 course.</p>
+<button type="button" onclick="change()">Change all paragraphs Green</button>
+<button type="button" onclick="changeFirst()">Change first and second paragraphs to Blue</button>
+<script>
+    function change()
+    {
+        var para = document.querySelectorAll("p");
+        for ( var i = 0; i < para.length; i++ )
+        {
+        	para[i].style.color="green";
+	    } 
+	 }
+    function changeFirst()
+    {
+        var para = document.querySelectorAll("p");
+       	para[0].style.color="blue";
+       	para[1].style.color="blue";
+	 }
+
+</script>
+<p id="listing"></p>
+<hr>
+</body>
+</html>
+	 

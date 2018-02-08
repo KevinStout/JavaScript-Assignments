@@ -1,0 +1,26 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<title>Manipulating Nodes</title>
+</head>
+<body>
+<section id="section1">
+	<p id="p1">"Success usually comes to those who are too busy to be looking for it"
+- Henry David Thoreau (1817-1862)</p>
+	<p id="p2">“If a man knows not to which port he sails, no wind is favorable.” 
+- Seneca</p>
+	<p id="p3">"Everything has beauty, but not everyone sees it. - Confucius."</p>
+	<button type="button" onClick="changeSentence()">Change quote 2</button>
+</section>
+<script>
+	function changeSentence(){
+		var para = document.createElement("p");
+		var node = document.createTextNode('"I hear, I know. I see, I remember. I do, I understand.- Confucius"');
+		para.appendChild(node);
+		var parent = document.getElementById("section1");
+		var child = document.getElementById("p2");
+		parent.replaceChild(para, child);
+	}	
+</script>
+</body>
+</html>

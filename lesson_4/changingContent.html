@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <section id="section1">
+        <p id="p1">"Better a poor man whose walk is blameless, than a rich man whose ways are perverse." -Proverbs 28:6</p>
+        <p id="p2">"Nothing lasts... but nothing is lost..." -Science</p>
+        <p id="p3">"It is better to be alone then in bad company." -George Washington</p>
+        <button type="button" onClick="changeSentence()">Change quote 2</button>
+        <button type="button" onclick="change()">Change all quotes Green</button>
+        <button type="button" onclick="changeFirst()">Change first and third quotes to Blue</button>
+        <button type="button" onclick="increaseFontSize(2)">Increase page's font size</button>
+        <button type="button" onclick="decreaseFontSize(-2)">Decrease page's font size</button>
+     </section>
+    <script>
+        function changeSentence(){
+            var para = document.createElement("p");
+            var node = document.createTextNode('"Your greatest enemy is your own perception and ignorance" -Kevin Stout');
+            para.appendChild(node);
+            var parent = document.getElementById("section1");
+            var child = document.getElementById("p2");
+            parent.replaceChild(para, child);
+        }	
+
+    function change(){
+        var para = document.querySelectorAll("p");
+        for ( var i = 0; i < para.length; i++ )
+        {
+        	para[i].style.color="green";
+	    } 
+	}
+
+    function changeFirst()
+    {
+        var para = document.querySelectorAll("p");
+       	para[0].style.color="blue";
+       	para[2].style.color="blue";
+	}
+
+    function increaseFontSize(multiplier) {
+        if(document.body.style.fontSize == ""){
+            document.body.style.fontSize = "1.0em";
+        }
+        document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.2) + "em";
+    }
+
+    function decreaseFontSize(multiplier) {
+        if(document.body.style.fontSize == ""){
+            document.body.style.fontSize = "1.0em";
+        }
+        document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.2) + "em";
+    }
+    </script>
+</body>
+</html>
