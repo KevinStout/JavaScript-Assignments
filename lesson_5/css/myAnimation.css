@@ -1,3 +1,38 @@
 body{
     background-image: url("../media/Giant_Ski_Jump.jpg");
-}
+    background-repeat:no-repeat;
+    background-size:1080px auto;
+    background-color:black;
+  }
+  #container {
+    width: 200px;
+    height: 200px;
+    position: relative;
+  }
+  #skier {
+    width: 150px;
+    height: 150px;
+    position: relative;
+    background-color: none;
+  }
+  p{
+    color:white;
+  }
+  input{
+      text-align:center;
+  }
+  #coords{
+      position:absolute;
+      left:550px;
+      top:20px;
+  }
+  section{
+      width:900px;
+      height:700px;      
+  }
+  button{
+      width:200px;
+      padding:10px;
+      color:white;
+      background-color:rgb(88, 88, 194);
+  }
