@@ -1,0 +1,171 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<title>Zeppos World</title>
+<style>
+body{
+  background-image:url('media/vectorJungle.jpg');
+  background-repeat:no-repeat;
+  background-size:950px auto;
+  background-color:black;
+}
+#container {
+  width: 200px;
+  height: 200px;
+  position: relative;
+}
+#monkey {
+  width: 150px;
+  height: 150px;
+  position: relative;
+  background-color: none;
+}
+p{
+  color:white;
+}
+input{
+	text-align:center;
+}
+#coords{
+	position:absolute;
+	left:550px;
+	top:20px;
+}
+section{
+	width:900px;
+	height:600px;
+}
+button{
+	width:200px;
+	padding:10px;
+	color:white;
+	background-color:green;
+}
+</style>
+</head>
+<body>
+<article>
+<section>
+<div id ="container">
+<img alt="zeppo" src="media/monkey.png" id ="monkey" />
+</div>
+</section>
+<section style="background-color:white;opacity:.8;padding-top:5px;padding-bottom:10px;height:50px;">
+<p style="text-align:center;">
+<button id="down">Move Zeppo down</button>
+<button id="up">Move Zeppo up </button>
+<button id="right">Move Zeppo right</button>
+<button id="left">Move Zeppo left</button>
+<button id="rock">Make Zeppo dance</button>
+<button id="stop">Make Zeppo stop</button>
+</p>
+</section>
+<script>
+var id;
+var posX=0;
+var posY=0;
+var elem = document.getElementById("monkey"); 
+
+document.getElementById("down").addEventListener("click",function() {
+  var id = setInterval(frame, 5);
+  posY=elem.y;
+  posX=elem.x; 
+  function frame() {
+    document.getElementById("stop").addEventListener("click",function(){clearInterval(id);});
+    if (posY>=450) {
+      clearInterval(id);
+    } else {
+      posY++; 
+      elem.style.top = posY + 'px'; 
+      document.getElementById("xCoord").value=elem.x;
+      document.getElementById("yCoord").value=elem.y;
+    }
+  }
+});
+
+document.getElementById("up").addEventListener("click",function() {
+  var id = setInterval(frame, 5);
+  posY=elem.y;
+  posX=elem.x; 
+  function frame() {
+    document.getElementById("stop").addEventListener("click",function(){clearInterval(id);});
+    if (posY <= 50) {
+      clearInterval(id);
+    } else {
+      posY--; 
+      elem.style.top = posY + 'px'; 
+      document.getElementById("xCoord").value=elem.x;
+      document.getElementById("yCoord").value=elem.y;
+    }
+  }
+});
+
+document.getElementById("right").addEventListener("click",function() {
+  posY=elem.y;
+  posX=elem.x; 
+  var id = setInterval(frame, 5);
+  function frame() {
+    document.getElementById("stop").addEventListener("click",function(){clearInterval(id);});
+    if (posX >= 750) {
+      clearInterval(id);
+    } else {
+      posX++;
+      elem.style.left = posX + 'px'; 
+      document.getElementById("xCoord").value=elem.x;
+      document.getElementById("yCoord").value=elem.y;
+    }
+  }
+});
+
+document.getElementById("left").addEventListener("click",function() {
+  posY=elem.y;
+  posX=elem.x; 
+  var id = setInterval(frame, 5);
+  function frame() {
+    document.getElementById("stop").addEventListener("click",function(){clearInterval(id);});
+    if (posX <= 50) {
+      clearInterval(id);
+    } else {
+      posX--;
+      elem.style.left = posX + 'px'; 
+      document.getElementById("xCoord").value=elem.x;
+      document.getElementById("yCoord").value=elem.y;
+    }
+  }
+});
+
+document.getElementById("rock").addEventListener("click",function() {
+  posY=elem.y;
+  posX=elem.x; 
+  var dir='r';
+  var id = setInterval(frame, 5);
+  function frame() {
+	document.getElementById("stop").addEventListener("click",function(){clearInterval(id);});
+  	if (dir=='r'){
+	    posX=posX+10; 
+	    posY=posY+10;
+        elem.style.left = posX + 'px';
+        elem.style.top = posY + 'px';  
+        dir='l';
+      }  
+     else {
+     	posX=posX-10; 
+     	posY=posY-10;
+        elem.style.left = posX + 'px'; 
+        elem.style.top = posY + 'px';  
+        dir='r';
+	} 
+	
+      document.getElementById("xCoord").value=elem.x;
+      document.getElementById("yCoord").value=elem.y;
+    }
+});
+
+</script>
+<div id="coords">
+<p> X Coordinate:<input type="text" id="xCoord" /><br> 
+ Y Coordinate:<input type="text" id="yCoord" /></p>
+ </div>
+ </article>
+</body>
+</html>
