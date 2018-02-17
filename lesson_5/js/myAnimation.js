@@ -1,5 +1,3 @@
-console.log("working");
-
 
 var id;
 var posX=0;
