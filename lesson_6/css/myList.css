@@ -1,0 +1,171 @@
+
+
+body {
+  background-color: rgb(92, 63, 63);
+  font-family: 'roboto', 'Futura', sans-serif;
+  margin: 0; 
+  padding: 0;}
+
+#page {
+  /* box-shadow: 2px 2px black; */
+  background-color: #504947;
+  margin: 0 auto 0 auto;
+  position: relative;
+  text-align: center;}
+  /* Responsive page rules at bottom of style sheet */
+
+h1 { 
+  background-image: url(../media/toDoList.png);
+  background-size: 50%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  text-align: center;
+  text-indent: -1000%;
+  height: 75px;
+  line-height: 75px;
+  width: 117px;
+  margin: 0 auto 0 auto;
+  padding: 30px 10px 20px 10px;}
+
+h2 {
+  color: rgb(241, 237, 237);
+  font-size: 24px;
+  font-weight: normal;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: .3em;
+  display: inline-block;
+  margin: 0 0 23px 0;}
+
+h2 span {
+  background-color: rgb(245, 239, 239);
+  color: rgb(12, 12, 12);
+  font-size: 12px;
+  text-align: center;
+  letter-spacing: 0;
+  display: inline-block;
+  position: relative;
+  border-radius: 50%;
+  top: -5px;
+  height: 22px;
+  width: 26px;
+  padding: 4px 0 0 0;}
+
+ul {
+  border:none;
+  padding: 0;
+  margin: 0;}
+
+li {
+  background-color: #6d6bf8;
+  color: rgb(243, 236, 236);
+  border-top: 1px solid #7667fa;
+  border-bottom: 1px solid #48399e;
+  font-size: 24px;
+  letter-spacing: .05em;
+  list-style-type: none;
+  text-shadow: 2px 2px 1px #363e8a;
+  text-align: left;
+  height: 50px;
+  padding-left: 1em;
+  padding-top: 10px;
+}
+
+.hot {
+  background-color: #b1454a;
+  color: rgb(245, 239, 239);
+  text-shadow: 2px 2px 1px #4d1919;
+  border-top: 1px solid #6d1b1e;
+  border-bottom: 1px solid #6d1e1e;}
+
+.complete {
+  background-color: rgb(52, 145, 44);
+  color: rgb(241, 234, 234);
+  background-image: url("../media/icon-trash.png");
+  background-position: right, center;
+  background-repeat: no-repeat;
+  border-top: 1px solid rgb(20, 99, 23);
+  border-bottom: 1px solid #1c912c;
+  text-shadow: 2px 2px 1px rgb(19, 36, 21);}
+
+.complete a {display:block;}
+
+/* FORM STYLES */
+
+form {
+  padding: 0 20px 20px 20px;}
+
+input[type='text'], input[type='password'], textarea {
+  background-color: rgb(96, 189, 166);
+  color: rgb(255, 255, 255);
+  font-size: 24px;
+  width: 96%;
+  padding: 4px 6px;
+  border: 1px solid rgb(141, 135, 135);
+  border-radius: 8px;}
+
+input[type='submit'], a.add, button, a.show {
+  background-color: #5f0753;
+  color: #ece5e3;
+  border-radius: 8px;
+  border: none;
+  padding: 8px 10px;
+  margin-top: 10px;
+  font-family: 'roboto', 'Futura', sans-serif;
+  font-size: 18px;
+  text-decoration: none;
+  text-transform: uppercase;}
+
+input[type='submit'], a.add, button {
+  float: right;} 
+
+input[type='text']:focus, input[type='password']:focus, textarea:focus {
+  border: 1px solid rgb(245, 239, 239);
+  background-color: rgb(75, 2, 53);
+  outline: none;}
+
+input[type='submit']:hover, a.add:hover, a.show:hover {
+  background-color: rgb(19, 18, 18);
+  color: rgb(245, 238, 238);
+  cursor: pointer;}
+
+/* form example */
+#newItemButton {padding: 10px 20px 75px 20px; display: none;}
+#newItemForm {padding-top: 20px;}
+#itemDescription {width: 360px;}
+#newItemForm input[type='submit'] {margin-top: 0; text-align: left;}
+
+/* Small screen:mobile */
+@media only screen and (max-width: 500px) {
+  body {
+      background-color: #403c3b;
+  }
+  #page {
+    max-width: 480px;
+  }
+}
+@media only screen and (min-width: 501px) and (max-width: 767px) {
+  #page {
+    max-width: 480px;
+    margin: 20px auto 20px auto;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+  #page {
+    max-width: 480px;
+    margin: 20px auto 20px auto;
+  }
+}
+/* Larger screens act like a demo for the app */
+@media only screen and (min-width: 960px) {
+  #page {
+    max-width: 480px;
+    margin: 20px auto 20px auto;
+  }
+}
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) { 
+  h1{
+    background-image: url(../media/toDoList.png);
+    background-size: 72px 72px;
+  }
+}
