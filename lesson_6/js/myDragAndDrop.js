@@ -6,7 +6,5 @@ $(function()
     $("#MoveMe4").draggable();
     $("#MoveMe5").draggable();
     $("#MoveMe6").draggable();
-    $("#MoveMe7").draggable();
-    $("#MoveMe8").draggable();                        
-    
+ 
 });
