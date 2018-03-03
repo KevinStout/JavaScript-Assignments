@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog>
+    <game>
+        <title>Far Cry 5</title>
+        <publisher>Ubisoft</publisher>
+        <genres>Action Adventure Game</genres>
+        <price>60.00</price>
+        <releaseYear>2018</releaseYear>
+    </game>
+    <game>
+        <title>Sea of Thieves</title>
+        <publisher>Rare</publisher>
+        <genres>Action Adventure Game</genres>
+        <price>59.88</price>
+        <releaseYear>2018</releaseYear>
+    </game>
+    <game>
+        <title>Age of Empires</title>
+        <publisher>Ensemble Studios</publisher>
+        <genres>Real Time Strategy</genres>
+        <price>19.99</price>
+        <releaseYear>1997</releaseYear>
+    </game>
+    <game>
+        <title>Quake Champions</title>
+        <publisher>Bethesda Softworks</publisher>
+        <genres>First Person Shooter</genres>
+        <price>29.99</price>
+        <releaseYear>2018</releaseYear>
+    </game>
+</catalog>
