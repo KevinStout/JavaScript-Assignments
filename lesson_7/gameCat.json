@@ -3,14 +3,14 @@
         {
             "title":"Far Cry 5", 
             "publisher":"Ubisoft", 
-            "genre":"Action Adventure Game",
+            "genre":"Action Adventure",
             "price":60.00,
             "releaseYear":2018 
         },
         {
             "title":"Sea of Thieves", 
             "publisher":"Rare", 
-            "genre":"Action Adventure Game",
+            "genre":"Action Adventure",
             "price":59.88,
             "releaseYear":2018 
         },

@@ -1,0 +1,17 @@
+body{
+	background-image:url('../media/background.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-position-y: 0px;
+    
+}
+div{
+	background-color:white;
+	opacity:.7;
+	padding:20px;
+	text-indent:20px;
+	width:50%;
+}
+h2{
+	color:white;
+}
