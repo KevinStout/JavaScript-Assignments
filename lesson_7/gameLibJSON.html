@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Game XML</title>
+<style>
+body{
+	background-image:url('media/background.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-position-y: 0px;
+    
+}
+div{
+	background-color:white;
+	opacity:.7;
+	padding:20px;
+	text-indent:20px;
+	width:50%;
+}
+h2{
+	color:white;
+}
+</style>
+</head>
+<body>
+<h2>Games in my collection</h2>
+<div id="gameInfo"></div>
+<button id="load">Get my game collection</button>
+<script>
+var myCollection = document.getElementById("load");
+myCollection.addEventListener("click", function() {
+    var xhttp=new XMLHttpRequest();
+    xhttp.onreadystatechange=function() {
+        if (xhttp.readyState==4 && xhttp.status==200)
+            {
+                xmlDoc=xhttp.responseXML;
+                var txt="<table style='border:0'><tr><th>Title</th><th>Publisher</th><th>Genre</th><th>Price</th><th>Year</th>";
+                var t=xmlDoc.getElementsByTagName("title");
+                var p=xmlDoc.getElementsByTagName("publisher");
+                var g=xmlDoc.getElementsByTagName("genres");
+                var pr=xmlDoc.getElementsByTagName("price");
+                var ry=xmlDoc.getElementsByTagName("releaseYear");
+                for (var i=0;i<t.length;i++)
+                    {
+                        txt=txt + "<tr><td>";
+                        txt=txt + t[i].childNodes[0].nodeValue + "</td><td>";
+                        txt=txt + p[i].childNodes[0].nodeValue + "</td><td>";
+                        txt=txt + g[i].childNodes[0].nodeValue + "</td><td>";
+                        txt=txt + pr[i].childNodes[0].nodeValue + "</td><td>";
+                        txt=txt + ry[i].childNodes[0].nodeValue + "</td></tr>";
+                    }
+                txt = txt + "</table>";    
+                document.getElementById("gameInfo").innerHTML=txt;
+                document.getElementById("load").style.visibility='hidden';
+            }
+    }
+    xhttp.open("GET","games.xml",true);
+    xhttp.send();
+});
+</script>
+</body>
+</html>

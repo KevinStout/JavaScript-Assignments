@@ -28,4 +28,11 @@
         <price>29.99</price>
         <releaseYear>2018</releaseYear>
     </game>
+    <game>
+        <title>Overwatch</title>
+        <publisher>Blizzard Entertainment</publisher>
+        <genres>Hero Shooter</genres>
+        <price>37.99</price>
+        <releaseYear>2016</releaseYear>
+    </game>
 </catalog>

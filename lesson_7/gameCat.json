@@ -1,0 +1,40 @@
+{
+    "catalog":[
+        {
+            "title":"Far Cry 5", 
+            "publisher":"Ubisoft", 
+            "genre":"Action Adventure Game",
+            "price":60.00,
+            "releaseYear":2018 
+        },
+        {
+            "title":"Sea of Thieves", 
+            "publisher":"Rare", 
+            "genre":"Action Adventure Game",
+            "price":59.88,
+            "releaseYear":2018 
+        },
+        {
+            "title":"Age of Empires", 
+            "publisher":"Ensemble Studios", 
+            "genre":"Real Time Strategy",
+            "price":19.99,
+            "releaseYear":1997 
+        },
+        {
+            "title":"Quake Champions", 
+            "publisher":"Bethesda Softworks", 
+            "genre":"First Person Shooter",
+            "price":29.99,
+            "releaseYear":2018 
+        },
+        {
+            "title":"Overwatch", 
+            "publisher":"Blizzard Entertainment", 
+            "genre":"Hero Shooter",
+            "price":37.99,
+            "releaseYear":2016 
+        }
+        
+    ]
+}
