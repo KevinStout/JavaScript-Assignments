@@ -1,0 +1,80 @@
+{
+    "rts":[
+        {
+            "title":"Age of Empires",
+            "publisher":"Ensemble Studios",
+            "price":19.99,
+            "releaseYear":1997
+        },
+        {
+            "title":"StarCraft",
+            "publisher":"Blizzard Entertainment",
+            "price":29.99,
+            "releaseYear":1998
+        },
+        {
+            "title":"Warcraft",
+            "publisher":"Blizzard Entertainment",
+            "price":25.99,
+            "releaseYear":1994
+        },
+        {
+            "title":"Command & Conquer",
+            "publisher":"Electronic Arts",
+            "price":16.99,
+            "releaseYear":1995
+        }
+    ],
+    "fps":[
+        {
+            "title":"Doom",
+            "publisher":"id Software",
+            "price":14.99,
+            "releaseYear":1993
+        },
+        {
+            "title":"Quake",
+            "publisher":"id Software",
+            "price":19.99,
+            "releaseYear":1996
+        },
+        {
+            "title":"Half-Life",
+            "publisher":"Valve Corporation",
+            "price":9.99,
+            "releaseYear":1998
+        },
+        {
+            "title":"Counter-Strike",
+            "publisher":"Valve Corporation",
+            "price":19.99,
+            "releaseYear":2000
+        }
+    ],
+    "rpg":[
+        {
+            "title":"Diablo",
+            "publisher":"Blizzard North",
+            "price":29.99,
+            "releaseYear":1996
+        },
+        {
+            "title":"Skyrim",
+            "publisher":"Bethesda Studios",
+            "price":59.99,
+            "releaseYear":2011
+        },
+        {
+            "title":"Final Fantasy",
+            "publisher":"Square",
+            "price":29.99,
+            "releaseYear":1997
+        },
+        {
+            "title":"Counter-Strike",
+            "publisher":"Mass Effect",
+            "price":59.99,
+            "releaseYear":2007
+        }
+    ]
+}

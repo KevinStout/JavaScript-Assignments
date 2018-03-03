@@ -33,7 +33,11 @@ $(function () {
         });
     }
 
-    //change to a button
-    window.onload = getNewData;
+    $('#games').on('click', function(){
+        console.log("button clicked");
+        
+        getNewData();
+    });
+    
 });
     
