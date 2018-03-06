@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <title>Logo</title>
+    <style type="text/css">
+      canvas { 
+          border: 1px solid black;
+          background-color: blueviolet;        
+       }
+    </style>
+  </head>
+  <body onload="draw();">
+    <canvas id="drawArea" width="300" height="300"></canvas>
+    <script type="text/javascript">
+        function draw() {
+          var canvas = document.getElementById('drawArea');
+          if (canvas.getContext) {
+            var ctx = canvas.getContext('2d');
+            
+            //drawing a rect
+            ctx.fillStyle = 'rgb(200, 0, 0)';
+            ctx.fillRect(90, 90, 100, 100);
+            
+            //drawing a rect
+            ctx.fillStyle = 'rgba(0, 0, 200, 0.5)';
+            ctx.fillRect(120, 120, 200, 200);
+
+            //drawing a tri
+            ctx.beginPath();
+            ctx.moveTo(300, 0);
+            ctx.lineTo(200, 150);
+            ctx.lineTo(130, 175);
+            ctx.fillStyle = 'rgba(150, 255, 150, 0.75)';
+            ctx.fill();
+
+            //drawing a smiley face
+            ctx.beginPath();        
+            ctx.strokeStyle = 'rgba(120, 203, 50, 1)'; 
+            ctx.lineWidth = 10;   
+            ctx.arc(75, 75, 50, 0, Math.PI * 2, true); // Outer circle
+            ctx.moveTo(110, 75);
+            ctx.arc(75, 75, 35, 0, Math.PI, false);  // Mouth (clockwise)
+            ctx.moveTo(65, 65);
+            ctx.arc(60, 65, 5, 0, Math.PI * 2, true);  // Left eye
+            ctx.moveTo(95, 65);
+            ctx.arc(90, 65, 5, 0, Math.PI * 2, true);  // Right eye
+            ctx.stroke();
+
+            //drawing text
+            ctx.font = "30px 'Bradley Hand ITC'";
+            ctx.lineWidth = 3;
+            ctx.strokeStyle = "black";
+            ctx.strokeText("Stuff and Things Inc.", 9, 250);
+          }
+        }
+      </script>
+  </body>
+</html>
