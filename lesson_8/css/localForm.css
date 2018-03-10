@@ -1,0 +1,80 @@
+@import url(http://fonts.googleapis.com/css?family=Nixie+One);
+body{
+	font-family: 'Nixie One', cursive;
+	background-image:url('../media/gravity.jpg');
+    background-repeat:no-repeat;
+    background-position:top center;   
+
+}
+section{
+	margin-left:6.5%;
+	background-color:#fdf8db;
+	width:400px; 
+	padding:10px;
+	box-shadow:10px 10px 10px  black;
+    opacity:.8;
+    color: rgb(204, 71, 71);
+    font-size: 18pt;
+}
+h1{
+	font-family: 'Nixie One', cursive;
+	margin-top:10px;
+	margin-bottom:10px;
+	font-size:34pt;
+	text-align:center;
+	color:darkred;
+	font-weight:900;
+	text-shadow:2px 2px 1px white;
+	width:40%;
+}
+h2{
+	font-family: 'Nixie One', cursive;
+	font-size:22pt;
+	text-align:center;
+}
+legend{
+	font-size:200%;
+	font-weight:900;
+	padding-top:15px;
+	padding-bottom:15px;
+	margin-left:10px;
+	color:rgb(204, 71, 71);
+	text-shadow:1px 1px 1px black;
+
+}
+label{
+	text-align:right;
+	width:200px;
+	float:left;
+	padding-right:10px;
+	color:rgb(218, 175, 175);
+	font-weight:900;
+	font-size:14pt;
+	vertical-align:text-top;
+}
+
+fieldset {
+    margin-bottom: .05%;
+    margin-left: 5%;
+	padding:1%;
+	width:30%;
+}
+	
+.inputButton{
+	font-size:14pt;
+	width: 100px; 
+	height: 30px;
+	font-size:12pt;
+	background-color: #EBF5FF;
+	color:black;
+	font-family: 'Nixie One', cursive;
+	font-weight:900;
+	margin-top:1%;
+	box-shadow:2px 2px 2px black;
+}
+.formEntry{
+	text-align:left;
+	width:150px;
+	font-size:14pt;
+	color:black;
+}
