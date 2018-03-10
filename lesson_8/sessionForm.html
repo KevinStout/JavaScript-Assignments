@@ -1,0 +1,33 @@
+
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+<meta charset="UTF-8">
+<title>Customer Inquiry Form</title>
+<link rel="stylesheet" href="css/localForm.css">
+</head>
+<body>
+<form id="register" method="get" action="sessionConfirm.html">
+<h1>Bike Club Membership </h1>
+  <fieldset> 
+    <legend>Personal details</legend> 
+	<div style="display:block;">
+        <p><label>First Name</label>
+        <input class="formEntry" id="firstName" name="firstName" type="text" placeholder="First name only" required autofocus> </p>
+        <p><label>Last Name</label>
+        <input class="formEntry"  id="lastName" name="lastName" type="text" placeholder="Last name only" required >  </p>
+        <p><label>Email </label> 
+        <input class="formEntry"  id="email" name="email" type="email" placeholder="example@domain.com" required> </p>
+        <p><label>Telephone </label> 
+         <input  class="formEntry" id="phone" name="phone" type="tel" placeholder="(989) 275-5000" required> </p>
+     	 <p>&nbsp; </p>
+	</div>
+  </fieldset>&nbsp; 
+  <div style="width:40%;"> 
+	    <p style="text-align:center; margin-right:2%;"><button class="inputButton" id="sub" type=submit>Submit </button>
+		<button class="inputButton" type="reset" value="reset">Reset</button></p>
+  </div>		
+ </form>
+ <script src="js/sessionForm.js"></script> 
+</body>
+</html>

@@ -1,0 +1,38 @@
+
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+<meta charset="UTF-8">
+<title>Customer Inquiry Form</title>
+<link rel="stylesheet" href="css/localForm.css">
+</head>
+<body>
+<h1>Bike Club Confirmation</h1>
+<section id="confirm"></section>
+<script>
+var first=last=email=phone="";
+if (sessionStorage.firstname)
+	first = sessionStorage.firstname;
+if (sessionStorage.lastname)
+	last = sessionStorage.lastname;
+if (sessionStorage.email)
+	email = sessionStorage.email;
+if (sessionStorage.phone){
+	var ph = String(sessionStorage.phone);
+	areaCode = ph.substr(0,3)
+	centralOfficeCode = ph.substr(3,3);
+	localNum=ph.substr(6,4);
+	phoneFormatted="(" + areaCode + ")" + centralOfficeCode + "-" + localNum;
+}	
+if(phone==""&&email==""&&first==""&&last==""){
+	alert("You must register before we can confirm your memebership");
+	window.location.assign("localForm.html");
+}
+else{
+	var display = "<p>" + first + " " + last + ", " + "Welcome to the TC Bikers!<br>"+
+	" We will contact you using: " + phoneFormatted + " or " + email + "</p>";
+	document.getElementById("confirm").innerHTML = display;		
+}	
+</script>
+</body>
+</html>
