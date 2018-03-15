@@ -88,7 +88,7 @@ document.getElementById("calculate").addEventListener("click",function(){
 			//document.getElementById("msg").innerHTML="You need to enter a valid number for age and months, try again!";
 			throw "You need to enter a valid number for age and months, try again!";
 		}else if (months<1||months>12){
-    		document.getElementById("msg").innerHTML="Months needs to be a number between 1 and 12, please try again!";	
+    		//document.getElementById("msg").innerHTML="Months needs to be a number between 1 and 12, please try again!";	
 			throw new RangeError("Months needs to be a number between 1 and 12, please try again!");
 		}else {   
 			var currentMonths = Math.floor(12-months);
