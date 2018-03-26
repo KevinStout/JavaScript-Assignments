@@ -1,0 +1,21 @@
+#accordion-menu{
+    font-size: 14px;
+}
+img{
+   float:right;
+   outline:5px solid black;
+   outline-offset:10px;
+   margin-right:20px;
+   margin:15px;
+   padding:10px;
+}
+nav{
+   width:70%;
+}
+body{
+background-color:black;
+}
+
+h1{
+    color: white;
+}
