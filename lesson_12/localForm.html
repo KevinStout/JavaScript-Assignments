@@ -4,22 +4,27 @@
 <head>
 <meta charset="UTF-8">
 <title>Customer Inquiry Form</title>
-<link rel="stylesheet" href="css/localForm.css">
+<link href="css/localForm.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-<form id="register" method="get" action="localConfirm.html">
+<form id="register" method="post"  novalidate >
 <h1>Bike Club Membership </h1>
-  <fieldset> 
+  <fieldset id="lightGrey"> 
     <legend>Personal details</legend> 
 	<div style="display:block;">
         <p><label>First Name</label>
-        <input class="formEntry" id="firstName" name="firstName" type="text" placeholder="First name only" required autofocus> </p>
+        <input class="formEntry" id="firstName" name="firstName" type="text" placeholder="First name only" autofocus required> <br>
+        <span id="firstError"></span></p>        
         <p><label>Last Name</label>
-        <input class="formEntry"  id="lastName" name="lastName" type="text" placeholder="Last name only" required >  </p>
+        <input class="formEntry"  id="lastName" name="lastName" type="text" placeholder="Last name only" > <br>
+        <span id="lastError"></span></p> 
         <p><label>Email </label> 
-        <input class="formEntry"  id="email" name="email" type="email" placeholder="example@domain.com" required> </p>
+        <input class="formEntry"  id="email" name="email" type="email" placeholder="example@domain.com" > <br>
+        <span id="emailError"></span></p> 
         <p><label>Telephone </label> 
-         <input  class="formEntry" id="phone" name="phone" type="tel" placeholder="(989) 275-5000" required> </p>
+        <input class="formEntry" id="areaCode" name="areaCode" type="number" placeholder="(800)" style="width:80px;text-align:center;">
+        <input  class="formEntry" id="phone" name="phone" type="tel" placeholder="555-7894"> <br>
+        <span id="phError"></span></p> 
      	 <p>&nbsp; </p>
 	</div>
   </fieldset>&nbsp; 
@@ -28,6 +33,6 @@
 		<button class="inputButton" type="reset" value="reset">Reset</button></p>
   </div>		
  </form>
- <script src="js/localForm.js"></script> 
+ <script src="js/localForm.js"> </script> 
 </body>
 </html>

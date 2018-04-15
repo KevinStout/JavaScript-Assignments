@@ -22,7 +22,7 @@ if (localStorage.phone){
 	areaCode = ph.substr(0,3)
 	centralOfficeCode = ph.substr(3,3);
 	localNum=ph.substr(6,4);
-	phoneFormatted="(" + areaCode + ")" + centralOfficeCode + "-" + localNum;
+	phoneFormatted="(" + areaCode + ")" + centralOfficeCode + localNum;
 }	
 if(phone==""&&email==""&&first==""&&last==""){
 	alert("You must register before we can confirm your memebership");

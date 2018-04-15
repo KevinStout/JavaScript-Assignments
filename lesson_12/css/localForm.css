@@ -32,6 +32,7 @@ h2{
 	font-size:22pt;
 	text-align:center;
 }
+
 legend{
 	font-size:200%;
 	font-weight:900;
@@ -77,4 +78,22 @@ fieldset {
 	width:150px;
 	font-size:14pt;
 	color:black;
+}
+
+#lightGrey{
+	background-color: rgba(168, 168, 168, 0.2);
+}
+
+#firstError, #lastError, #emailError{
+	color:red;
+	font-weight:900;
+	font-size: 150%;
+	margin-left:150px;
+}
+
+#phError{
+	color:red;
+	font-weight:900;
+	font-size: 150%;
+	margin-left:0px;	
 }
